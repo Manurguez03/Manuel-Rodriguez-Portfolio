@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Manuel Rodriguez Berdud · Sports & Causal Analytics</title>
+<title>Manuel Rodriguez Berdud · Data Scientist in Sports Analytics</title>
 <meta name="description" content="Data Science M.S. candidate at Florida Poly. Causal inference, sports analytics and cloud/AI. Turning raw performance data into decision-ready insight.">
 <meta property="og:title" content="Manuel Rodriguez Berdud · Sports & Causal Analytics">
 <meta property="og:description" content="Turning raw performance data into causal, decision-ready insight.">
@@ -29,21 +29,8 @@
 
 <main>
 <section id="about" class="hero">
-  <svg class="court" viewBox="0 0 800 400" aria-hidden="true">
-    <g fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="40" y="40" width="720" height="320"/>
-      <line x1="400" y1="40" x2="400" y2="360"/>
-      <line x1="40" y1="110" x2="760" y2="110"/>
-      <line x1="40" y1="290" x2="760" y2="290"/>
-      <line x1="220" y1="110" x2="220" y2="290"/>
-      <line x1="580" y1="110" x2="580" y2="290"/>
-      <line x1="220" y1="200" x2="580" y2="200"/>
-      <path class="traj" d="M70 330 Q 300 20 730 250"/>
-    </g>
-    <circle class="ball" r="9" cx="730" cy="250"/>
-  </svg>
   <p class="eyebrow">Data Science M.S. · Florida Polytechnic University</p>
-  <h1>I turn raw performance data into <em>causal, decision-ready</em> insight.</h1>
+  <h1>I use data to find out <em>what really makes</em> athletes perform.</h1>
   <p class="lead">Hi, I'm Manuel. A former NAIA tennis and soccer athlete turned data scientist, I specialize in sports analytics, causal inference and applied machine learning. I hold a B.S. in Mathematics and Physics, and I'm open to relocation.</p>
   <div class="cta">
     <a class="btn primary" href="Resume_Manu_rguez.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
@@ -51,12 +38,51 @@
     <a class="btn" href="https://www.linkedin.com/in/manurguez03" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="https://github.com/Manurguez03" target="_blank" rel="noopener">GitHub</a>
   </div>
-  <ul class="scoreboard">
-    <li><b data-count="300000">300K+</b><span>biomechanics observations</span></li>
-    <li><b data-count="55000">55K+</b><span>marathon records analyzed</span></li>
-    <li><b>3.89</b><span>GPA · MS &amp; BS</span></li>
-    <li><b>3</b><span>languages spoken</span></li>
+  <div class="court-wrap">
+    <svg class="court" id="court" viewBox="0 0 800 400" role="group" aria-label="Tennis court menu. Each zone jumps to a section.">
+      <g class="lines" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="40" y="40" width="720" height="320"/>
+        <line x1="400" y1="40" x2="400" y2="360"/>
+        <line x1="40" y1="110" x2="760" y2="110"/>
+        <line x1="40" y1="290" x2="760" y2="290"/>
+        <line x1="220" y1="110" x2="220" y2="290"/>
+        <line x1="580" y1="110" x2="580" y2="290"/>
+        <line x1="220" y1="200" x2="580" y2="200"/>
+      </g>
+      <path class="traj" d="M70 330 Q 300 20 730 250" fill="none" stroke-width="2"/>
+      <circle class="ball" r="9" cx="730" cy="250"/>
+      <g class="zones">
+        <a href="#skills" aria-label="Skills"><rect x="40" y="110" width="180" height="180"/><text x="130" y="205">Skills</text></a>
+        <a href="#research" aria-label="Research"><rect x="220" y="110" width="180" height="90"/><text x="310" y="161">Research</text></a>
+        <a href="#projects" aria-label="Projects"><rect x="220" y="200" width="180" height="90"/><text x="310" y="251">Projects</text></a>
+        <a href="#experience" aria-label="Experience"><rect x="400" y="110" width="180" height="90"/><text x="490" y="161">Experience</text></a>
+        <a href="#education" aria-label="Education"><rect x="400" y="200" width="180" height="90"/><text x="490" y="251">Education</text></a>
+        <a href="#contact" aria-label="Contact"><rect x="580" y="110" width="180" height="180"/><text x="670" y="205">Contact</text></a>
+      </g>
+    </svg>
+    <p class="hint">Tap a zone of the court to jump to that section · <button id="serve" class="link">serve again ↻</button></p>
+  </div>
+
+  <div class="lottery card" id="lottery">
+    <div class="meta">Try it · the Lucky Loser lottery</div>
+    <h3>Does one lucky break change a career?</h3>
+    <p>Four players lose in qualifying. A spot opens, and one is picked at random to enter the main draw as a "lucky loser". Compare that player with the other three.</p>
+    <div class="lt-grid">
+      <ul id="lt-players" class="lt-players" aria-live="polite"></ul>
+      <svg id="lt-chart" class="lt-chart" viewBox="0 0 400 200" role="img" aria-label="Ranking spots gained over five years, lucky loser versus the other qualifying losers"></svg>
+    </div>
+    <p id="lt-result" class="lt-result" aria-live="polite"></p>
+    <div class="cta"><button id="lt-draw" class="btn primary">Draw a lucky loser <kbd>R</kbd></button><span class="seed" id="lt-seed"></span></div>
+    <p class="note">Illustrative toy simulation, not results from my thesis. One draw is noisy, which is exactly why I use causal methods on hundreds of real players.</p>
+  </div>
+
+  <ul class="scoreboard" id="scoreboard">
+    <li tabindex="0" data-story="NYC Marathon runners, wrangled with LLMs and R"><b>55K+</b><span>marathon records analyzed</span></li>
+    <li tabindex="0" data-story="Pitches with 200+ biomechanical variables each"><b>300K+</b><span>biomechanics observations</span></li>
+    <li tabindex="0" data-story="At Florida Poly and Concordia, both degrees"><b>3.89</b><span>GPA · MS &amp; BS</span></li>
+    <li tabindex="0" data-story="Spanish, English and Portuguese"><b>3</b><span>languages spoken</span></li>
   </ul>
+  <p class="hint">Tap a stat to flip it.</p>
 </section>
 
 <section id="research">
