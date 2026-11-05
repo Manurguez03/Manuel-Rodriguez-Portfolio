@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Manuel Rodriguez Berdud · Data Scientist in Sports Analytics</title>
-<meta name="description" content="Data Science M.S. candidate at Florida Poly. Causal inference, sports analytics and cloud/AI. Turning raw performance data into decision-ready insight.">
-<meta property="og:title" content="Manuel Rodriguez Berdud · Sports & Causal Analytics">
-<meta property="og:description" content="Turning raw performance data into causal, decision-ready insight.">
+<title>Manuel Rodriguez Berdud · Data Scientist</title>
+<meta name="description" content="Data Science M.S. candidate at Florida Poly. Statistical modeling, machine learning, causal inference and cloud data pipelines for finance, healthcare, manufacturing, technology and sports.">
+<meta property="og:title" content="Manuel Rodriguez Berdud · Data Scientist">
+<meta property="og:description" content="Turning complex data into clear, reliable decisions.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,7 @@
 <header class="nav">
   <a href="#about" class="brand">MRB<span>.</span></a>
   <nav>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
+    <a href="#research">Research Projects</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
@@ -29,11 +28,14 @@
 
 <main>
 <section id="about" class="hero">
-  <p class="eyebrow">Data Science M.S. · Florida Polytechnic University</p>
-  <h1>I use data to find out <em>what really makes</em> athletes perform.</h1>
-  <p class="lead">Hi, I'm Manuel. A former NAIA tennis and soccer athlete turned data scientist, I specialize in sports analytics, causal inference and applied machine learning. I hold a B.S. in Mathematics and Physics, and I'm open to relocation.</p>
+  <p class="eyebrow">Data Scientist · M.S. Data Science, Florida Polytechnic University</p>
+  <h1>I turn complex data into <em>clear, reliable</em> decisions.</h1>
+  <p class="lead">Hi, I'm Manuel, a data science graduate student with a strong quantitative background in mathematics and physics. I bring proven expertise in statistical modeling, machine learning and cloud data architecture, plus a track record of engineering scalable data pipelines and delivering data-driven insights across consulting, research and technical environments. I love using statistics, ML and AI to solve real-world problems, especially in sports analytics, where technology meets my love for sports.</p>
+  <ul class="industries" aria-label="Fields where I apply my skills">
+    <li>Finance</li><li>Healthcare</li><li>Manufacturing</li><li>Technology</li><li class="main">Sports <small>my main research area</small></li>
+  </ul>
   <div class="cta">
-    <a class="btn primary" href="Resume_Manu_rguez.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    <a class="btn primary" href="Manu_rguez_data_analytics.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
     <a class="btn" href="mailto:manuelrguezberdud@outlook.com">Email</a>
     <a class="btn" href="https://www.linkedin.com/in/manurguez03" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="https://github.com/Manurguez03" target="_blank" rel="noopener">GitHub</a>
@@ -53,8 +55,7 @@
       <circle class="ball" r="9" cx="730" cy="250"/>
       <g class="zones">
         <a href="#skills" aria-label="Skills"><rect x="40" y="110" width="180" height="180"/><text x="130" y="205">Skills</text></a>
-        <a href="#research" aria-label="Research"><rect x="220" y="110" width="180" height="90"/><text x="310" y="161">Research</text></a>
-        <a href="#projects" aria-label="Projects"><rect x="220" y="200" width="180" height="90"/><text x="310" y="251">Projects</text></a>
+        <a href="#research" aria-label="Research Projects"><rect x="220" y="110" width="180" height="180"/><text x="310" y="186">Research</text><text x="310" y="226">Projects</text></a>
         <a href="#experience" aria-label="Experience"><rect x="400" y="110" width="180" height="90"/><text x="490" y="161">Experience</text></a>
         <a href="#education" aria-label="Education"><rect x="400" y="200" width="180" height="90"/><text x="490" y="251">Education</text></a>
         <a href="#contact" aria-label="Contact"><rect x="580" y="110" width="180" height="180"/><text x="670" y="205">Contact</text></a>
@@ -63,101 +64,127 @@
     <p class="hint">Tap a zone of the court to jump to that section · <button id="serve" class="link">serve again ↻</button></p>
   </div>
 
-  <div class="lottery card" id="lottery">
-    <div class="meta">Try it · the Lucky Loser lottery</div>
-    <h3>Does one lucky break change a career?</h3>
-    <p>Four players lose in qualifying. A spot opens, and one is picked at random to enter the main draw as a "lucky loser". Compare that player with the other three.</p>
-    <div class="lt-grid">
-      <ul id="lt-players" class="lt-players" aria-live="polite"></ul>
-      <svg id="lt-chart" class="lt-chart" viewBox="0 0 400 200" role="img" aria-label="Ranking spots gained over five years, lucky loser versus the other qualifying losers"></svg>
-    </div>
-    <p id="lt-result" class="lt-result" aria-live="polite"></p>
-    <div class="cta"><button id="lt-draw" class="btn primary">Draw a lucky loser <kbd>R</kbd></button><span class="seed" id="lt-seed"></span></div>
-    <p class="note">Illustrative toy simulation, not results from my thesis. One draw is noisy, which is exactly why I use causal methods on hundreds of real players.</p>
-  </div>
-
   <ul class="scoreboard" id="scoreboard">
-    <li tabindex="0" data-story="NYC Marathon runners, wrangled with LLMs and R"><b>55K+</b><span>marathon records analyzed</span></li>
-    <li tabindex="0" data-story="Pitches with 200+ biomechanical variables each"><b>300K+</b><span>biomechanics observations</span></li>
+    <li tabindex="0" data-story="Pitch records and 200+ variables, distilled to 81K+ analysis-ready pitches"><b>300K+</b><span>records processed</span></li>
+    <li tabindex="0" data-story="Marathon records cleaned and analyzed with an LLM-powered workflow"><b>55K+</b><span>records wrangled</span></li>
+    <li tabindex="0" data-story="Player-month observations across 140+ players and 16 years"><b>3,000+</b><span>longitudinal observations</span></li>
     <li tabindex="0" data-story="At Florida Poly and Concordia, both degrees"><b>3.89</b><span>GPA · MS &amp; BS</span></li>
-    <li tabindex="0" data-story="Spanish, English and Portuguese"><b>3</b><span>languages spoken</span></li>
   </ul>
   <p class="hint">Tap a stat to flip it.</p>
 </section>
 
 <section id="research">
-  <h2><span>01</span> Research</h2>
+  <h2><span>01</span> Research Projects</h2>
 
   <article class="card reveal">
     <div class="meta">Master's thesis · Apr 2026 – present</div>
     <h3>Causal impact of Lucky Loser entry on tennis careers</h3>
-    <p>Does a lucky break create a career? I build a player-level panel across Grand Slams, linking ATP rankings, qualifying results and main-draw records, to compare selected Lucky Losers against eligible qualifying losers using causal and longitudinal methods.</p>
-    <ul class="stats"><li><b>Grand Slam</b> panel dataset</li><li><b>Causal</b> + longitudinal design</li><li><b>Cohorts</b> LL vs. qualifying losers</li></ul>
-    <p class="tags">Python · R · causal inference · panel data</p>
+    <p>Does one lucky break change a career? I built a longitudinal dataset of 3,000+ player-month observations across 140+ tennis players and 16 years, integrating ATP rankings and match results with Python and LLM-assisted pipelines. I test Grand Slam Lucky Loser selection against random-draw expectations, then use a quasi-experimental Difference-in-Differences design to estimate the causal effect on long-term career outcomes.</p>
+    <ul class="stats"><li><b>3,000+</b> player-month observations</li><li><b>140+</b> players · 16 years</li><li><b>DiD</b> causal design</li></ul>
+    <p class="tags">Python · causal inference · Difference-in-Differences · hypothesis testing</p>
+    <p class="applies">Same method answers: did a policy, treatment, campaign or process change really move the outcome?</p>
   </article>
+
+  <div class="lottery card reveal" id="lottery">
+    <div class="meta">Try it · how a lucky loser is chosen</div>
+    <h3>One withdrawal. Four players. One lucky break.</h3>
+    <p>When a player withdraws from a Grand Slam main draw, the four highest-ranked players who lost in the final round of qualifying go into a random draw. The one picked gets the spot (<b class="t">treated</b>). The other three stay out (<b class="c">control</b>). Their rankings and situations are nearly identical, so luck is the only difference.</p>
+    <ul id="lt-hat" class="hat" aria-live="polite"></ul>
+    <div class="cta"><button id="lt-draw" class="btn primary">Draw the lucky loser <kbd>R</kbd></button><span class="seed" id="lt-seed"></span></div>
+
+    <div id="lt-after" hidden>
+      <p class="lt-q">Now follow both groups over time. What changed because of the lucky break?</p>
+      <div class="tabs" role="tablist" aria-label="Outcome">
+        <button role="tab" data-m="rank" aria-selected="true" class="on">ATP ranking</button>
+        <button role="tab" data-m="prize" aria-selected="false">Prize money</button>
+      </div>
+      <svg id="lt-chart" class="lt-chart" viewBox="0 0 400 230" role="img" aria-label="Outcome over time for the lucky loser and the control group, before and after the draw"></svg>
+      <p id="lt-result" class="lt-result" aria-live="polite"></p>
+    </div>
+    <p class="note">Illustrative toy simulation based on the design in my thesis proposal, not results. One draw is noisy, so the real study repeats this across many Grand Slam draws and uses Difference-in-Differences with player and time fixed effects.</p>
+  </div>
 
   <article class="card reveal">
     <div class="meta">Lakeland Flying Tigers · Aug 2026 – present</div>
     <h3>Biomechanics-based pitch command analysis</h3>
-    <p>Which body mechanics drive command? Using feature selection and multivariate analysis, I identify the key biomechanical factors tied to pitch command and characterize performance patterns across pitching profiles.</p>
-    <ul class="stats"><li><b>300,000+</b> observations</li><li><b>200+</b> variables</li><li><b>Profiles</b> of pitching patterns</li></ul>
-    <p class="tags">Python · scikit-learn · feature selection · multivariate analysis</p>
+    <p>Which body mechanics drive pitch command? I processed 300,000+ pitch records and 200+ variables into an analysis-ready subset of 81,000+ pitches and 100+ biomechanical predictors, then applied Random Forest-based Boruta feature selection with cross-validation to find the key predictors and validate a reduced feature set for predictive modeling.</p>
+    <ul class="stats"><li><b>300,000+</b> pitch records</li><li><b>81,000+</b> analysis-ready</li><li><b>100+</b> predictors</li></ul>
+    <p class="tags">Python · Boruta · Random Forest · cross-validation · predictive modeling</p>
+    <p class="applies">Same method answers: which of hundreds of sensor or process variables actually matter?</p>
   </article>
 
-  <article class="card reveal">
-    <div class="meta">Florida Polytechnic University · Aug 2025 – present</div>
-    <h3>Graduate research assistant</h3>
-    <p>Literature reviews and dataset analysis across 5+ projects, working with faculty to plan and execute research and contribute to manuscripts, reports and presentations for academic and professional audiences.</p>
-    <ul class="stats"><li><b>5+</b> projects</li><li><b>Manuscripts</b> &amp; reports</li><li><b>Faculty</b> collaboration</li></ul>
-    <p class="tags">Research methods · LaTeX · Python · R</p>
-  </article>
-</section>
+  <div class="pitcher card reveal" id="pitcher">
+    <div class="meta">Try it · build a pitcher</div>
+    <h3>Change the mechanics, watch the command</h3>
+    <p>Move the sliders to change the delivery, then throw. A repeatable motion puts every pitch in the same spot. A rushed or inconsistent one scatters them.</p>
+    <div class="pt-grid">
+      <div>
+        <svg id="pt-fig" class="pt-fig" viewBox="0 0 420 290" role="img" aria-label="Side view of a pitcher whose pose follows the sliders"></svg>
+        <div class="pt-sliders">
+          <label>Stride length <output id="o-stride"></output><input id="s-stride" type="range" min="0" max="100" value="70"></label>
+          <label>Trunk lean <output id="o-trunk"></output><input id="s-trunk" type="range" min="0" max="100" value="55"></label>
+          <label>Arm slot <output id="o-arm"></output><input id="s-arm" type="range" min="0" max="100" value="60"></label>
+        </div>
+        <div class="pt-presets"><button class="btn" data-p="rushed">Rushed</button><button class="btn" data-p="locked">Locked in</button><button class="btn" data-p="random">Surprise me</button></div>
+      </div>
+      <div>
+        <svg id="pt-zone" class="pt-zone" viewBox="0 0 240 300" role="img" aria-label="Strike zone seen from behind the plate with the thrown pitches"></svg>
+        <div class="cta"><button id="pt-throw" class="btn primary">Throw a pitch</button><button id="pt-ten" class="btn">Throw 10</button></div>
+        <p id="pt-read" class="pt-read" aria-live="polite"></p>
+      </div>
+    </div>
+    <p class="note">Illustrative toy model, not findings from the data. The real analysis lets Boruta pick the predictors that matter out of 100+ measurements.</p>
+  </div>
 
-<section id="projects">
-  <h2><span>02</span> Projects</h2>
   <article class="card reveal">
     <div class="meta">Feb – Apr 2026</div>
-    <h3>LLM-assisted data wrangling &amp; EDA of the NYC Marathon</h3>
-    <p>Used LLMs and R (tidyverse) to automate wrangling of 55,000+ records, then explored performance trends across runners with R and Tableau.</p>
-    <ul class="stats"><li><b>55,000+</b> records</li><li><b>LLM</b> automation</li><li><b>Tableau</b> visuals</li></ul>
-    <p class="tags">R · tidyverse · Tableau · LLMs</p>
+    <h3>LLM-powered data wrangling &amp; EDA · NYC Marathon</h3>
+    <p>Built an automated LLM-powered workflow in R to clean, transform and analyze 55,000+ marathon records, then used exploratory analysis and Tableau dashboards to visualize performance patterns and trends.</p>
+    <ul class="stats"><li><b>55,000+</b> records</li><li><b>LLM</b> automation</li><li><b>Tableau</b> dashboards</li></ul>
+    <p class="tags">R · tidyverse · Tableau · LLM integration</p>
+    <p class="applies">Same method answers: how do I turn messy raw data into a trustworthy dataset fast?</p>
   </article>
 </section>
 
 <section id="experience">
-  <h2><span>03</span> Experience</h2>
+  <h2><span>02</span> Experience</h2>
   <ol class="timeline">
     <li class="reveal">
       <time>May – Jul 2026</time>
       <h3>Tech Consulting Intern · Structurit <small>Madrid, Spain</small></h3>
-      <p>Prepared 10+ technical proposals for public and private sector digital transformation, supporting cloud architectures and Industry 4.0 solutions. Used AWS for data ingestion, processing and management, and completed AWS AI Practitioner (AIF-C01) training in generative AI, ML and AWS AI services.</p>
+      <p>Helped with 5+ technical proposals, translating client requirements into AWS cloud architectures, data integration strategies and implementation roadmaps for Industry 4.0 initiatives. Contributed to solution planning for NeuraPlant (industrial IT/OT data integration) and DocuTons (private generative AI), evaluating cloud services, security requirements and deployment strategies. Completed AWS Certified AI Practitioner training.</p>
     </li>
     <li class="reveal">
       <time>Aug 2025 – present</time>
       <h3>Graduate Research Assistant · Florida Polytechnic University <small>Lakeland, FL</small></h3>
-      <p>Research design, literature review and data analysis across 5+ projects.</p>
+      <p>Worked with faculty across 3+ research projects, reviewing statistical methodologies, evaluating analytical approaches and refining findings to strengthen academic manuscripts. Developed Python-based data collection and processing pipelines that turn raw, unstructured data into analysis-ready datasets for statistical modeling and predictive analysis.</p>
+    </li>
+    <li class="reveal">
+      <time>May – Jul 2024</time>
+      <h3>Software Engineering Intern · ViewNext, an IBM subsidiary <small>Madrid, Spain</small></h3>
+      <p>Developed and optimized RESTful microservices with Spring Boot and Java 17 in the GISS framework, using Postman and Swagger for API testing and performance validation. Used Gen AI tools and prompt engineering to automate code generation and improve efficiency.</p>
     </li>
     <li class="reveal">
       <time>Jun – Aug 2025</time>
       <h3>Tennis Coach · Weils Tennis Academy <small>Ojai, CA</small></h3>
-      <p>Coached and mentored 15+ young players, improving technical skills and competitive performance.</p>
+      <p>Coached and mentored 15+ young players, improving their technical skills and competitive performance.</p>
     </li>
     <li class="reveal">
       <time>Oct 2021 – May 2025</time>
       <h3>Dining Service Supervisor · Chartwells <small>Seward, NE</small></h3>
-      <p>Supervised and coordinated a team of 6+ employees during daily operations while competing as a student-athlete.</p>
+      <p>Supervised and coordinated a team of 6+ employees during daily dining operations.</p>
     </li>
   </ol>
 </section>
 
 <section id="education">
-  <h2><span>04</span> Education &amp; honors</h2>
+  <h2><span>03</span> Education &amp; honors</h2>
   <div class="grid2">
     <article class="card reveal">
       <div class="meta">Aug 2025 – May 2027</div>
       <h3>M.S. Data Science</h3>
       <p>Florida Polytechnic University · GPA 3.89/4.0 · SHPE member</p>
-      <p class="tags">Computational Data Analysis · DW &amp; EDA · Optimization · Time Series · Econometrics</p>
+      <p class="tags">Time Series · Econometrics · Optimization · Machine Learning · Data Wrangling &amp; EDA · Computational Data Analysis</p>
     </article>
     <article class="card reveal">
       <div class="meta">Aug 2021 – May 2025</div>
@@ -168,29 +195,44 @@
   </div>
   <ul class="honors reveal">
     <li>Academic All-American · 2024, 2025</li>
-    <li>NAIA athletic scholarships · Tennis &amp; Soccer</li>
+    <li>NAIA athlete · Tennis &amp; Soccer scholarships</li>
+    <li>College tennis player · teamwork, discipline, resilience</li>
     <li>SHPE · Society of Hispanic Professional Engineers</li>
-    <li>AWS AI Practitioner (AIF-C01) training</li>
+    <li>AWS Certified AI Practitioner training</li>
   </ul>
 </section>
 
 <section id="skills">
-  <h2><span>05</span> Skills</h2>
-  <div class="skills reveal">
-    <div><h4>Languages &amp; dev</h4><p class="chips"><i>Python</i><i>R</i><i>SQL</i><i>LaTeX</i><i>CLIPS</i><i>Git/GitHub</i><i>Postman</i><i>Swagger</i><i>API testing</i></p></div>
-    <div><h4>Analytics &amp; ML</h4><p class="chips"><i>pandas</i><i>NumPy</i><i>scikit-learn</i><i>PyTorch</i><i>Jupyter</i><i>Causal inference</i><i>Time series</i></p></div>
-    <div><h4>Visualization &amp; cloud</h4><p class="chips"><i>Tableau</i><i>Power BI</i><i>Matplotlib</i><i>Excel</i><i>AWS</i></p></div>
-    <div><h4>Spoken</h4><p class="chips"><i>Spanish · native</i><i>English · fluent</i><i>Portuguese · intermediate</i></p></div>
+  <h2><span>04</span> Skills</h2>
+  <div class="pk card reveal">
+    <div class="meta">Take a penalty · pick your corner</div>
+    <p>Shoot at the goal. Where the ball lands decides which set of skills it reveals.</p>
+    <svg id="goal" class="goal" viewBox="0 0 800 340" role="group" aria-label="Penalty kick. Choose one of six zones of the goal to shoot at.">
+      <defs><pattern id="net" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 0L20 20M20 0L0 20"/></pattern></defs>
+      <line class="gline" x1="40" x2="760" y1="240" y2="240"/>
+      <rect class="net" x="100" y="40" width="600" height="200" fill="url(#net)"/>
+      <path class="post" d="M100 240V40H700V240" fill="none"/>
+      <g transform="translate(400,190)"><g id="gk" class="gk">
+        <circle cx="0" cy="-48" r="13"/>
+        <path d="M0 -35V20M0 -25L-32 -48M0 -25L32 -48M0 20L-16 52M0 20L16 52"/>
+      </g></g>
+      <g id="zones" class="gzones"></g>
+      <circle class="spot" cx="400" cy="305" r="3"/>
+      <g id="ball" class="ball-g" style="transform:translate(400px,305px)"><circle r="14" class="ball-c"/><path class="ball-p" d="M0-6L5.7-1.9 3.5 4.9H-3.5L-5.7-1.9Z"/></g>
+    </svg>
+    <div id="kick-panel" class="kick-panel" aria-live="polite"></div>
+    <p class="hint"><button id="kick-all" class="link">or show all skills at once</button></p>
   </div>
 </section>
 
 <section id="contact">
-  <h2><span>06</span> Contact</h2>
-  <p class="lead">Open to data science, sports analytics and applied AI opportunities, and open to relocation.</p>
+  <h2><span>05</span> Contact</h2>
+  <p class="lead">Open to data science, analytics and applied AI roles across industries.</p>
   <div class="cta">
     <a class="btn primary" href="mailto:manuelrguezberdud@outlook.com">manuelrguezberdud@outlook.com</a>
     <a class="btn" href="https://www.linkedin.com/in/manurguez03" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="Resume_Manu_rguez.pdf" target="_blank" rel="noopener">Download résumé</a>
+    <a class="btn" href="Manu_rguez_data_analytics.pdf" target="_blank" rel="noopener">Résumé · Data analytics</a>
+    <a class="btn" href="Manu_rguez_sports_analytics.pdf" target="_blank" rel="noopener">Résumé · Sports analytics</a>
   </div>
 </section>
 </main>
